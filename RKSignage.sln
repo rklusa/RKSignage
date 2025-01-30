@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RKSignage.Server", "RKSignage.Server\RKSignage.Server.csproj", "{DE728AFA-5020-4E19-B325-9E6D632B72EB}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "rksignage.client", "rksignage.client\rksignage.client.esproj", "{2372481C-3AC1-465F-AAAE-68BBA7D95D47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE728AFA-5020-4E19-B325-9E6D632B72EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE728AFA-5020-4E19-B325-9E6D632B72EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE728AFA-5020-4E19-B325-9E6D632B72EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE728AFA-5020-4E19-B325-9E6D632B72EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2372481C-3AC1-465F-AAAE-68BBA7D95D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2372481C-3AC1-465F-AAAE-68BBA7D95D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2372481C-3AC1-465F-AAAE-68BBA7D95D47}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2372481C-3AC1-465F-AAAE-68BBA7D95D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2372481C-3AC1-465F-AAAE-68BBA7D95D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2372481C-3AC1-465F-AAAE-68BBA7D95D47}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24C164CA-60DC-4229-8E25-E88F0344FFC6}
+	EndGlobalSection
+EndGlobal

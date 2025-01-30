@@ -1,0 +1,6 @@
+@RKSignage.Server_HostAddress = http://localhost:5164
+
+GET {{RKSignage.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
