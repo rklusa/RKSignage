@@ -51,6 +51,11 @@ export default defineConfig({
                 target: 'https://localhost:7174',
                 changeOrigin: true,
                 secure: false
+            },
+            '^/GetPlaylists': {
+                target: 'https://localhost:7174',
+                changeOrigin: true,
+                secure: false
             }
         },
         port: 5173,

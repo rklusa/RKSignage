@@ -110,7 +110,7 @@ namespace RKSignage.Server
             return tempSlides;
         }
 
-        public static List<Playlist> ViewPlayLists()
+        public static List<Playlist> ViewTables()
         {
             List<Playlist> tempTables = new List<Playlist>();
 

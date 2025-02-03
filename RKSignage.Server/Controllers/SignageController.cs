@@ -24,5 +24,16 @@ namespace RKSignage.Server.Controllers
 
             return slides.ToArray();
         }
+
+        [HttpGet()]
+        [Route("GetPlayLists")]
+        public IEnumerable<Playlist> GetPlayListsData()
+        {
+            List<Playlist> playLists = new List<Playlist>();
+
+            playLists = DBManager.ViewTables();
+
+            return playLists.ToArray();
+        }
     }
 }
