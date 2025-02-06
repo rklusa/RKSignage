@@ -4,9 +4,11 @@ import PhotoViewer from "./Components/PhotoViewer";
 import PlayListViewer from "./Components/PlayListViewer";
 
 function App() {
+    const [isViewing, setIsViewing] = useState(false);
     const [slides, setSlides] = useState();
     const [playlists, setPlaylists] = useState();
-    const playListName = 'TestPlayList1';
+    const [playlistName, setPlayListName] = useState();
+    //const playListName = 'TestPlayList1';
 
     const testSlides = [
         "https://localhost:7174/StaticFiles/River1.jpg",
@@ -16,13 +18,21 @@ function App() {
     ]
 
     useEffect(() => {
-        //getSlidesData();
         GetPlayListsData();
     }, []);
 
+    useEffect(() => {
+        if (playlistName == undefined) {
+            return;
+        }
+        
+        GetSlidesData(playlistName);
+        setIsViewing(true);
+    }, [playlistName])
+
     return (
         <div>
-            <PlayListViewer _data={playlists}> </PlayListViewer>
+            {isViewing ? <PhotoViewer _data={slides} > </PhotoViewer> : <PlayListViewer _data={playlists} _setPlaylistName={SetPlaylist}> </PlayListViewer>}
         </div>
     );
 
@@ -50,9 +60,9 @@ function App() {
             console.log(e);
         }
     }
-    async function GetSlidesData() {
+    async function GetSlidesData(name) {
         try {
-            const response = await fetch(`GetSlides?playListName=${playListName}`)
+            const response = await fetch(`GetSlides?playListName=${name}`)
 
             if (!response.ok) {
                 throw new Error(response.statusText);
@@ -80,6 +90,10 @@ function App() {
         });
 
         setSlides(cleanData);
+    }
+
+    function SetPlaylist(name) {
+        setPlayListName(name);
     }
 }
 

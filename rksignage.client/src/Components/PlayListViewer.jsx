@@ -1,4 +1,4 @@
-function PlayListViewer({ _data }) {
+function PlayListViewer({ _data, _setPlaylistName}) {
 
     let dataItems = undefined;
 
@@ -9,7 +9,7 @@ function PlayListViewer({ _data }) {
         dataItems = _data.map(item =>
             <li>
                 {item.name}
-                <button> Play </button>
+                <button onClick={() => {_setPlaylistName(item.name)}}> Play </button>
             </li>
         );
     }
@@ -27,7 +27,6 @@ function PlayListViewer({ _data }) {
             </div>
         )
     }
-
 }
 
 export default PlayListViewer;
