@@ -47,12 +47,12 @@ export default defineConfig({
                 target,
                 secure: false
             },
-            '^/GetSlides': {
+            '^/viewer/GetSlides': {
                 target: 'https://localhost:7174',
                 changeOrigin: true,
                 secure: false
             },
-            '^/GetPlaylists': {
+            '^/viewer/GetPlaylists': {
                 target: 'https://localhost:7174',
                 changeOrigin: true,
                 secure: false

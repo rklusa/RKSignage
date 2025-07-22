@@ -15,7 +15,7 @@ namespace RKSignage.Server.Controllers
         }
 
         [HttpGet()]
-        [Route("GetSlides")]
+        [Route("/viewer/GetSlides")]
         public IEnumerable<Slide> GetSlidesData(string playListName)
         {
             List<Slide> slides = new List<Slide>();
@@ -26,7 +26,7 @@ namespace RKSignage.Server.Controllers
         }
 
         [HttpGet()]
-        [Route("GetPlayLists")]
+        [Route("/viewer/GetPlayLists")]
         public IEnumerable<Playlist> GetPlayListsData()
         {
             List<Playlist> playLists = new List<Playlist>();

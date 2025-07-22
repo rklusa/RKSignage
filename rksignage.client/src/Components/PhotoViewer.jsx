@@ -5,7 +5,7 @@ function PhotoSlider({ _data }) {
 
     if (_data == undefined) {
         return (
-            <p1>data is undefined! reload the page</p1>
+            <h1>data is undefined! reload the page</h1>
         )
     }
     else {
